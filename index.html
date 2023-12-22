@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O vs X</title>
+    <link rel="stylesheet" href="style.css" />
+    <div class="game">
+      <div class="choose-symbol">
+        <p>Choose your symbol:</p>
+        <img src="/X.png" alt="X" onclick="chooseSymbol('X')">
+        <img src="/O.png" alt="O" onclick="chooseSymbol('O')">
+      </div>      
+</div>
+  </head>
+  <body>
+    <div class="game">
+      <h1>Ｏ v.s. X</h1> <!-- 遊戲名稱 -->
+      <div class="scoreboard">
+        <p>玩家 X wins: <span id="playerXWins">0</span></p>
+        <p>玩家 O wins: <span id="playerOWins">0</span></p>
+      </div>
+      <div class="grid">
+        <div class="cell" onclick="handleClick(0)"></div>
+        <div class="cell" onclick="handleClick(1)"></div>
+        <div class="cell" onclick="handleClick(2)"></div>
+        <div class="cell" onclick="handleClick(3)"></div>
+        <div class="cell" onclick="handleClick(4)"></div>
+        <div class="cell" onclick="handleClick(5)"></div>
+        <div class="cell" onclick="handleClick(6)"></div>
+        <div class="cell" onclick="handleClick(7)"></div>
+        <div class="cell" onclick="handleClick(8)"></div>
+      </div>
+      <p class="message"></p>
+      <button class="reset" onclick="resetGame()">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
